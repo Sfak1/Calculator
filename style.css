@@ -1,0 +1,75 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: #1f1e1e;
+    color: #c0c1c1;
+    margin: auto;
+    width: auto;
+    height: 100vh;    
+}
+
+.calculator {
+    padding: 10px;
+    border-radius: 1em;
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    background-color: #191b28;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.display-box {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    text-align: right;
+    background-color: #ffffff;
+    border: solid black 0.5px;
+    color: black;
+    border-radius: 5px;
+    width: 95%;
+    height: 90%;
+}
+
+#btn {
+    background-color: #ff3b00;
+}
+
+/* Default button styling */
+input[type=button] {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    background-color: #444444;
+    color: white;
+    border: solid black 0.5px;
+    width: 90px;
+    border-radius: 10px;
+    height: 60px;
+    outline: none;
+}
+
+/* Clear button with larger size */
+#clear-btn {
+    width: 90px;
+    height: 60px;
+    background-color: #ff0000; /* Example: make it red */
+    font-size: 1.2rem;
+}
+
+/* Temperature conversion buttons with a specific width */
+#temp-btn {
+    width: 190px;
+    height: 40px;
+    background-color: #0066ff; /* Example: blue for temperature buttons */
+    color: white;
+    font-size: 1.2rem;
+}
+
+input[type=button]:hover {
+    background: #ff3b00;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(255, 59, 0, 0.4);
+}
+
+input:active[type=button] {
+    transform: scale(0.95);
+}
