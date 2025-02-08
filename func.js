@@ -20,10 +20,20 @@ function display(value) {
     document.getElementById("result").value += value;
 }
 
+
+// Safe calculation
+function safe(expression){
+    try {
+        return Function('"use strict";return (' + expression + ')')();
+    } catch (error) {
+        return "Error";
+    }
+}
+
 // This function evaluates the expression and returns result
 function calculate() {
     var p = document.getElementById("result").value;
-    var q = eval(p);
+    var q = safe(p);
     document.getElementById("result").value = q;
 }
 function FtoC(){
